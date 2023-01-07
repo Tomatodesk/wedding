@@ -13,6 +13,7 @@
   --gray_bg: #ececec;
   --text_color: #565656;
   --pink_color: #C69DD2;
+  --blue_color: #85C8DD;
 }
 
 @font-face {
@@ -42,7 +43,7 @@ body {
 }
 
 ::selection {
-  background: var(--main_color);
+  background: var(--blue_color);
   color: #ffffff;
 }
 
@@ -1706,5 +1707,5 @@ hr {
 
 
 .bold-colored-text {
-  color: #C69DD2;
+  color: #CC8B8C;
 }
