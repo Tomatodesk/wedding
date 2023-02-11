@@ -70,14 +70,17 @@
             <p>
               Liebe Gäste,
             <p>
-              wir freuen uns riesig bald mit euch zu feiern! Gerade gibt es keine aktuellen Mitteilungen, dies wird sich
+              nur noch
+              <!-- Countdown Timer -->
+              <nobr id="demo" style="color: #85C8DD"></nobr> 
+              bis zu unserer Hochzeit! Wir freuen uns riesig bald mit euch zu feiern! Gerade gibt es keine aktuellen Mitteilungen, dies wird sich
               allerdings sicher ändern wenn der Termin näher rückt!
             </p>
             <b>Bis dahin bleibt gesund und munter und kontaktiert uns jederzeit, wenn ihr Fragen haben
               solltet!</b><br><br>
 
             Herzlichst, <br>
-            Kaddy und Lennart
+            Kaddy und Lennart mit Anton
             </p>
           </div>
         </div>
@@ -108,6 +111,11 @@
                 Feierlocation Wilder Mann ca. <b class="bold-colored-text">20 min</b> Fahrzeit.
                 Sie ist nur wirklich gut mit dem Auto zu erreichen. Solltet ihr Schwierigkeiten haben, eine
                 Mitfahrgelegenheit zu finden, gebt uns Bescheid und wir kümmern uns darum!</p>
+                Weitere Infos:
+                <ul>
+                  <li>es darf kein Reis gestreut werden in und vor der Kirche. Blüten und Seifenblasen sind aber gute Alternativen! :)</li>
+                  <li>es gibt genügend Parkmöglichkeiten vor Ort</li>
+                </ul>
               <p><img src="hochzeit_res/img/Lindenberg.jpg" alt="Gasthaus Zum Wilden Mann"
                   class="img-responsive img-rounded">
               </p>
@@ -119,7 +127,7 @@
             <h3 class="text-center">Feier im Wilden Mann</h3>
             
             <div class="mb40">
-              <i class="fa fa-clock-o"></i> ab ca. 16:00 Uhr<br>
+              <i class="fa fa-clock-o"></i> <b class="bold-colored-text">ab ca. 16:00 Uhr</b><br>
               <i class="fa fa-map-marker"></i> Höllentalstraße 25, 79199 Kirchzarten
               <i class="fa fa-external-link"></i> <a href="https://goo.gl/maps/nXtvFeZTt39qAmK96"
                 target="_blank">(Google Maps)</a>
@@ -130,6 +138,10 @@
                 riesiger Grünfläche mittem im Dreisamtal. Für Eltern mit kleinen Kindern gibt es drinnen einen ruhigen
                 Raum. Bitte denkt auch daran, warme Sachen mitzubringen, da es abends
                 kühl werden kann.</p>
+                Weitere Infos:
+                <ul>
+                  <li>es gibt genügend Parkmöglichkeiten vor Ort</li>
+                </ul>
               <p><img src="hochzeit_res/img/WilderMann.jpeg" alt="Gasthaus Zum Wilden Mann"
                   class="img-responsive img-rounded">
               </p>
@@ -164,9 +176,9 @@
           <h3> Ihr wollt noch etwas zum Abendprogramm beitragen? Wir würden uns sehr darüber freuen! </h3>
           <p>Unsere Trauzeugen werden sicher gehen, dass wir nicht total peinliche Sachen machen müssen! Bitte sendet
             zur Organisation eine kurze Nachricht an <a href="mailto: wietaelin.moritz@gmail.com?Subject=Abendprogramm"
-              target="_top">Wieta Moritz</a> oder
+              target="_top">Wieta Moritz</a> (0157 / 73060865) oder
             <a href="mailto: ann-sophie.ringlage@t-online.de?Subject=Abendprogramm" target="_top">Ann-Sophie
-              Ringlage</a>.
+              Ringlage</a> (0178 / 2013784).
           </p>
         </div>
         <div class="col-xl-12 text-center">
@@ -175,6 +187,8 @@
             nächsten Tag kein Kater und gesünder ist es sowieso :) Ihr könnt euch daher
             auf eine tolle und abwechslungsreiche Auswahl vieler neuer und interessanter Getränke freuen!
           </p>
+            
+
         </div>
       </div>
 
@@ -270,3 +284,39 @@
 </body>
 
 </html>
+
+
+
+
+  <!-- Script Timer -->
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jun 24, 2023 14:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + " Tage " + hours + " Stunden "
+    + minutes + " Minuten " + seconds + " Sekunden ";
+  
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
