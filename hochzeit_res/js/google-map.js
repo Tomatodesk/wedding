@@ -4,7 +4,7 @@ var google;
 function init() {
     // Basic options for a simple Google Map
 
-    var myLatlng = new google.maps.LatLng(47.9747, 7.8779);
+    var myLatlng = new google.maps.LatLng(47.9747, 8);
 
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -40,10 +40,10 @@ function init() {
         map: map,
         animation: google.maps.Animation.DROP,
         label: {
-            text: 'Sport & Bike Hostel',
+            text: 'Kirche am Lindenberg',
             fontWeight: "bold",
         },
-        position: { lat: 47.966888, lng: 7.955664 }
+        position: { lat: 48.00087663787675, lng: 8.011094643079552 }
     });
 }
 
